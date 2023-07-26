@@ -121,5 +121,9 @@ def put(self, item_data, item_id):
     ...
 ```
 
-Veja que neste exemplo 2 temos a _@blp.response(200, ItemSchema)_ dizendo que o retorno será 200 e o que será retornado será o ItemSchema.
+Veja que neste exemplo 2 temos a _@blp.response(200, ItemSchema)\_ dizendo que o retorno será 200 e o que será retornado será o ItemSchema.
 Isto vai ajudar também a API do Swagger a gerar a documentação correta sobre o que é enviado e o que é retornado.
+
+## PASSOS A SE ESTUDAR
+
+- flask-rq2 ou rq para fila de tarefas em background dentro do Flask
