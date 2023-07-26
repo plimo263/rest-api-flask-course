@@ -94,8 +94,8 @@ def create_app(db_url = None):
             ), 401
         )
 
-    # with app.app_context():
-    #     db.create_all()
+    with app.app_context():
+        db.create_all()
 
     # Comandos a serem executados na linha de comando para migração
     # flask db init # Inicia as configuracoes para armazenar os dados da migracao
